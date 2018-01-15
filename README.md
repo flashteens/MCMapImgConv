@@ -1,6 +1,6 @@
 # 「Minecraft 1.12 圖片轉地圖工具」by FlashTeens
 (Snapshot 0.1, 最近更新: 2018-01-15)
-* **Note: This project currently supports "Traditional Chinese" only. English version will be available soon. Stay tuned! :)**
+* **Note: This project currently supports "*Traditional Chinese*" only. English version will be available soon. Stay tuned! :)**
 * 本工具僅適用於 Windows 作業系統，並且請確定您的電腦已安裝 Java 1.8 版本。
 * 由於在 Minecraft 中使用「地圖」一詞可指「地圖物品」或「世界存檔」等涵義，容易造成混淆，
   因此本說明統一以「地圖物品」或「地圖檔」指稱地圖物品 (map item)，
@@ -43,6 +43,11 @@
 2. 從檔案總管中開啟「%appdata%\.minecraft\saves\您的世界存檔目錄\data\」路徑，
    並將其中的「map_XXX.dat」檔案複製到本工具的執行檔資料夾中。(XXX為對應的地圖檔編號)
 3. 將複製後的「map_XXX.dat」拖移到執行檔「FTMCMapImgConv.bat」中，即可得到轉換後的 PNG 圖片。
+
+## 如何在 Eclipse 中使用本專案的 Java 原始碼
+* 將 src 資料夾中的所有程式碼複製到您的 Eclipse 專案中即可，無需任何外部的 library dependencies。
+* 請確保 JRE 的執行環境為 Java 1.8 版本。
+* 匯出 JAR 執行檔時，請將 Launch configuration 的類別設定為 MapImageConverterMain。
 
 ## 其他注意事項
 * 如需單純測試本工具的轉檔功能，您可試著將壓縮檔內的「example_img2map」或「example_map2img」資料夾拖移到「FTMCMapImgConv.bat」，
